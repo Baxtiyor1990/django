@@ -1,14 +1,18 @@
 
+
 from pathlib import Path
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = 'django-insecure-v(%i*_7qt7!do1eo-i5nb2n(err^t$xt4+3+n9*2g8+a_j43=3'
+SECRET_KEY = 'django-insecure-v&e&vmghgec^xj=4^q@#c&uf7-kizq1)*rov1nk_7l_j)bumu9'
+
 
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -17,7 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'newapp',
+    'catalog',
 ]
 
 MIDDLEWARE = [
@@ -57,6 +61,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 
 AUTH_PASSWORD_VALIDATORS = [
